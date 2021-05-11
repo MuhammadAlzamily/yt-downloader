@@ -13,8 +13,8 @@ export default function Downloader() {
       url: "https://getvideo.p.rapidapi.com/",
       params: { url: vidurl },
       headers: {
-        "x-rapidapi-key": "6f8f5d760bmsh67db04f0c711434p11b987jsne23a91fa6cc9",
-        "x-rapidapi-host": "getvideo.p.rapidapi.com",
+        "x-rapidapi-key": "GET_YOUR_KEY",
+        "x-rapidapi-host": "GET_YOUR_KEY",
       },
     };
 
