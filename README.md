@@ -1,6 +1,14 @@
 # Youtube Video Downloader
 
-_live demo of the app [here](https://grab-tuber.netlify.app/) for web and browsers on Android as there have been major issues on iPhones_
+_live demo of the app [here](https://grab-tuber.netlify.app/)_
+
+## How To Use The App
+
+Simply copy the link to the youtube video you'd like to download and paste it into the input fild then click search just as instructed inside the app
+
+## Before Cloning The Repo
+
+You firslty need to get your api credentials from [here](https://rapidapi.com/Top-Rated/api/get-video-and-audio-url) then simply fill in your info in the `Downloader.jsx` component
 
 ## Instructions
 
