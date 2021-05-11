@@ -35,7 +35,7 @@ export default function Downloader() {
         height="100vh"
         alignItems="center"
         justifyContent="center"
-        bg="lightblue"
+        bgGradient="linear(to-l, #7928CA, #FF0080)"
       >
         <VStack
           fontFamily="cursive"
@@ -54,10 +54,12 @@ export default function Downloader() {
             onChange={(e) => setVidUrl(e.target.value)}
           />
           <Button
-            variant="outline"
             colorScheme="twitter"
             size="lg"
             onClick={buttonHandler}
+            _hover={{
+              bgGradient: "linear(to-r, red.500, yellow.500)",
+            }}
           >
             SEARCH
           </Button>
