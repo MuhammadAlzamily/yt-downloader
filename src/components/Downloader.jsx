@@ -1,6 +1,6 @@
 import { Button } from "@chakra-ui/button";
 import { Input } from "@chakra-ui/input";
-import { Center, Heading, Text, VStack } from "@chakra-ui/layout";
+import { Container, Flex, Heading, Text, VStack } from "@chakra-ui/layout";
 import React, { useState } from "react";
 import axios from "axios";
 export default function Downloader() {
@@ -31,18 +31,25 @@ export default function Downloader() {
   };
   return (
     <div>
-      <Center bg="lightpink" fontFamily="cursive" h="2xl" fontWeight="bold">
-        <VStack spacing={25}>
-          <Heading size="2xl" as="h3">
-            YouTube Video Downloader
+      <Flex
+        height="100vh"
+        alignItems="center"
+        justifyContent="center"
+        bg="lightblue"
+      >
+        <VStack
+          fontFamily="cursive"
+          fontWeight="bold"
+          fontSize="lg"
+          spacing={25}
+        >
+          <Heading size="lg" as="h3">
+            YouTube Video Downloader V1.0
           </Heading>
-          <Text size="lg">
-            Paste in the url to the video then click download
-          </Text>
+          <Text size="lg">Paste in the url to the video then click search</Text>
           <Input
-            w="2xl"
             bg="lightgray"
-            variant="filled"
+            variant="outline"
             value={vidurl}
             onChange={(e) => setVidUrl(e.target.value)}
           />
@@ -65,7 +72,7 @@ export default function Downloader() {
             </a>
           )}
         </VStack>
-      </Center>
+      </Flex>
     </div>
   );
 }
