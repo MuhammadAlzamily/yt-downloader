@@ -13,8 +13,8 @@ export default function Downloader() {
       url: "https://getvideo.p.rapidapi.com/",
       params: { url: vidurl },
       headers: {
-        "x-rapidapi-key": "GET_YOUR_KEY",
-        "x-rapidapi-host": "GET_YOUR_KEY",
+        "x-rapidapi-key": process.env.REACT_APP_YT_API_KEY,
+        "x-rapidapi-host": process.env.REACT_APP_YT_API_HOST,
       },
     };
 
