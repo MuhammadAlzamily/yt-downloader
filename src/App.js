@@ -38,7 +38,7 @@ export default function App() {
       {!loaded? (<h4></h4>) : (
           <div class="row">
           <div class="col mt-4">
-          <a href={downloadlink} class="btn btn-success">DOWNLOAD NOW</a>
+          <a href={downloadlink} class="btn btn-success" download>DOWNLOAD NOW</a>
           </div>
           </div>
         )}
